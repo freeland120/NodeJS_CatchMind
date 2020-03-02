@@ -6,7 +6,7 @@ import {
   resetCanvas
 } from "./paint";
 
-import { disableChat } from "./chat";
+import { disableChat, enableChat } from "./chat";
 
 const board = document.getElementById("jsPBoard");
 const notifs = document.getElementById("jsNotifs");
@@ -30,18 +30,20 @@ export const handleGameStarted = () => {
   setNotifs("");
   disableCanvas();
   hideControls();
+  enableChat();
 };
 export const handleLeaderNotif = ({ word }) => {
   enableCanvas();
   showControls();
   disableChat();
-  notifs.innerText = `You are the leader, paint: ${word}`;
+  notifs.innerText = `당신은 방장입니다. 다음과 같이 묘사해주세요! : ${word}`;
 };
 export const handleGameEnded = () => {
-  setNotifs("Game ended.");
+  setNotifs("게임이 끝났습니다.⏰");
   disableCanvas();
   hideControls();
   resetCanvas();
 };
 
-export const handleGameStarting = () => setNotifs("Game will start soon");
+export const handleGameStarting = () =>
+  setNotifs("게임이 곧 시작됩니다. 기다려주세요⌛");

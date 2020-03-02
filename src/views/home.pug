@@ -8,7 +8,7 @@ html(lang="en")
     body
         .loginBox
             form#jsLogin
-                input(placeholder="Whats your nickname", type="text")
+                input(placeholder="당신의 닉네임은 무엇인가요?", type="text")
         .gameContainer#jsGame
             .main
                 #jsNotifs
@@ -31,7 +31,7 @@ html(lang="en")
                 .player__board#jsPBoard
                 ul.chat__messages#jsMessages
                 form.chat__form#jsSendMsg
-                    input(placeholder="Write a message", type="text")
+                    input(placeholder="메세지를 입력하세요", type="text")
         script.
             window.events = !{events}
         script(src="/socket.io/socket.io.js")
