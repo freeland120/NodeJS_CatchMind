@@ -1,0 +1,43 @@
+{
+  "name": "nodejs_catchmind",
+  "version": "1.0.0",
+  "description": "React, NodeJS, Soket IO, Gulp, Mongo DB를 이용해서 캐치마인드(드로잉게임) 리얼타임 게임 만들기!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js --ignore assets/ --ignore src/static",
+    "dev:assets": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeland120/NodeJS_CatchMind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freeland120/NodeJS_CatchMind/issues"
+  },
+  "homepage": "https://github.com/freeland120/NodeJS_CatchMind#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/register": "^7.8.6",
+    "babelify": "^10.0.0",
+    "del": "^5.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "pug": "^2.0.4",
+    "socket.io": "^2.3.0"
+  }
+}
