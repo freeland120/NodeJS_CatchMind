@@ -6,7 +6,7 @@ import del from "del";
 import bro from "gulp-browserify";
 import babel from "babelify";
 
-sass.compiler = require("node-sass");
+sass.compiler = require("node-sass"); //sass를 node.js와 바인딩하기 위해 필요한 컴파일러
 
 const paths = {
   styles: {

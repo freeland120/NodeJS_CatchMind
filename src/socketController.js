@@ -25,7 +25,7 @@ const socketController = (socket, io) => {
           superBroadcast(events.gameStarted);
           io.to(leader.id).emit(events.leaderNotif, { word });
           timeout = setTimeout(endGame, 30000);
-        }, 5000);
+        }, 10000);
       }
     }
   };
@@ -72,7 +72,7 @@ const socketController = (socket, io) => {
   socket.on(events.sendMsg, ({ message }) => {
     if (message === word) {
       superBroadcast(events.newMsg, {
-        message: `승자: ${socket.nickname}, 문제 답: ${word}`,
+        message: `Winner✌ : ${socket.nickname}, Answer : ${word}`,
         nickname: "Bot"
       });
       addPoints(socket.id);
