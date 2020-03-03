@@ -85,7 +85,7 @@ video {
 
   font: inherit;
   vertical-align: baseline;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-weight: 600;
   font-family: Gmarket_Bold;
@@ -125,21 +125,4 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-@font-face {
-  font-family: Gmarket_Bold;
-  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
-  src: url("../src/font/GmarketSansTTFLight.ttf") format("truetype");
-  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
-}
-@font-face {
-  font-family: Gmarket_SansLight;
-
-  src: url("../src/font/GmarketSansTTFLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: Gmarket_SansMedium;
-
-  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
 }
