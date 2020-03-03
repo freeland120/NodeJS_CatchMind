@@ -1,8 +1,8 @@
 # 누가누가 더 잘 그리나?🌈
 
-NodeJS,Pug, Soket IO, Gulp, Mongo DB를 이용해서 캐치마인드(드로잉게임) 리얼타임 게임 만들기!!!
+NodeJS,Pug, Soket IO, Gulp, Mongo DB를 이용해서 캐치마인드(드로잉게임) 리얼타임 게임 만들기!!!<hr/>
 
-## Features🐳 <hr/>
+## Features🐳
 
 **구현한 기능✅**
 
